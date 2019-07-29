@@ -1,0 +1,7 @@
+import os
+path =r"C:\Users\vishal-kumar\M_ANPR\training"
+files = os.listdir(path)
+
+
+for index, file in enumerate(files):
+    os.rename(os.path.join(path, file), os.path.join(path,'car_train'+ str(index)+'.jpg'))
