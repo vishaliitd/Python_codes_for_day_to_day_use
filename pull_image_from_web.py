@@ -38,3 +38,5 @@ if __name__ == '__main__':
     search_name = 'fidget kid spinner toys'     #keyword feeded
     links = get_links(search_name)
     save_images(links, search_name)
+
+    #https://www.youtube.com/watch?v=Lg4T9iJkwhE&list=PLX-LrBk6h3wSGvuTnxB2Kj358XfctL4BM&index=5
