@@ -1,0 +1,16 @@
+import os
+import shutil
+path =r"C:\Users\vishal-kumar\Documents\UFPR-ALPR dataset\training"
+dest=r"C:\Users\vishal-kumar\Documents\UFPR-ALPR dataset\training\image"
+
+
+for item in os.listdir(path):
+    path_upd = path+'/'+item
+    item=os.path.join(path,item)
+    #print(item)
+    for file in os.listdir(item):
+        if ".txt" in file:
+            continue
+        else:
+            print(file+'  >>  '+path_upd +'/'+ file)
+            shutil.copyfile(path_upd +'/'+ file, dest+'/'+ file)
